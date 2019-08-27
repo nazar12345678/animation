@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iron man -1</title>
+</head>
+<img>
+<center><img src="ironmansprites1.png" id="1" width="35" height="50" style="margin: 150px;"></img><br/></center>
+<audio src="Marilyn-Manson-The-Beautiful-People-_Official-Video_.mp3" id="2"></audio>
+</body>
+<script>
+    number=1
+    timer = setInterval(time, 140)
+
+
+    function time() {
+        document.getElementById('1').src = "ironmansprites" + number + ".png"
+        document.getElementById('2').play()
+        number++
+        if(number>6){
+            number=1
+        }
+    }
+</script>
+</html>
